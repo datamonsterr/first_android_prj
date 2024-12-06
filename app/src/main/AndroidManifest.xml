@@ -13,12 +13,22 @@
         android:theme="@style/Theme.LearnAndroid"
         tools:targetApi="34">
         <activity
-            android:name=".MainActivity"
+            android:name=".SignUpActivity"
+            android:exported="false"
+            android:label="@string/title_activity_sign_up"
+            android:theme="@style/Theme.LearnAndroid" />
+        <activity
+            android:name=".SignInActivity"
+            android:exported="false"
+            android:label="@string/title_activity_sign_in"
+            android:theme="@style/Theme.LearnAndroid" />
+        <activity
+            android:name=".StartActivity"
+            android:screenOrientation="landscape"
             android:exported="true"
             android:theme="@style/Theme.LearnAndroid">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
